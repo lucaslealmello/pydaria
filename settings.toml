@@ -1,0 +1,19 @@
+[default]
+SQLALCHEMY_DATABASE_URI = 'sqlite:///development.db'
+TITLE = "pydaria"
+SECRET_KEY = "jadkfbsdkjbfbh"
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+EXTENSIONS = [
+
+"pydaria.ext.appearance",
+"pydaria.ext.database",
+"pydaria.ext.auth",
+"pydaria.ext.admin",
+"pydaria.ext.commands",
+"pydaria.blueprints.webui",
+"pydaria.blueprints.restapi",
+]
+
+
+[production]
+SQALCHEMY_DATABASE_URI = 'postgres:///...'
